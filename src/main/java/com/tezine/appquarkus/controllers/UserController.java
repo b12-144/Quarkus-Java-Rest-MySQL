@@ -5,6 +5,8 @@ import org.eclipse.microprofile.openapi.annotations.enums.SchemaType;
 import org.eclipse.microprofile.openapi.annotations.media.Content;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
+import org.eclipse.microprofile.openapi.annotations.tags.Tag;
+
 import com.tezine.appquarkus.codes.Logger;
 import com.tezine.appquarkus.codes.UserNotFoundException;
 import com.tezine.appquarkus.entities.User;
@@ -29,6 +31,7 @@ import jakarta.ws.rs.core.MediaType;
 
 @RequestScoped
 @Path("/v1/users")
+@Tag(name = "UserController", description = "User operations.")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 // @SecurityScheme(securitySchemeName = "Basic Auth", type =
