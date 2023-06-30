@@ -10,9 +10,9 @@ import static org.hamcrest.CoreMatchers.is;
 public class UserControllerTest {
 
     @Test
-    public void testHelloEndpoint() {
+    public void testGetUsersEndpoint() {
            given()
-          .when().get("/users/v1/get-fruits")
+          .when().get("/v1/users/get-users")
           .then()
              .statusCode(200);
 

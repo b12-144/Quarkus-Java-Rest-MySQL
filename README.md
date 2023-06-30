@@ -6,6 +6,7 @@ A Quarkus Java bootstrap application using Rest and MySQL.
 Follow the steps below to run the app in dev mode:<br>
 1. Update the MySQL connection string to match your connection in application.properties .
    
+
 Run the app with live coding using:
 ```shell script
 ./mvnw compile quarkus:dev
@@ -51,5 +52,7 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 You can then execute your native executable with: `./target/app-quarkus-1.0.0-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
+More info on how to use Hibernate with Panache [here](https://quarkus.io/guides/hibernate-orm-panache) .
+More samples available at Quarkus Github [here](https://github.com/quarkusio/quarkus-quickstarts).
 
 Enjoy! ❤️
